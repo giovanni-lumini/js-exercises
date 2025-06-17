@@ -1,5 +1,4 @@
 /* 
-EXERCISE 1
 In this kata, your task is to implement an extended version of the famous rock-paper-scissors game. The rules are as follows:
 
 Scissors cuts Paper
@@ -20,6 +19,8 @@ Inputs
 Values will be given as one of "rock", "paper", "scissors", "lizard", "spock".
 */
 
+console.log("esercizio 1"); 
+
 //oggetto con chiavi che vincono contro i valori (array di stringhe)
 const win = {
     scissors: ["paper", "lizard"],
@@ -38,15 +39,8 @@ function rpsls(pl1,pl2){
   } else {
     return "Player 2 Won!";
   }
-    
 }
 
-//risultato salvato nell variabile
-const resultRpsls = rpsls("paper", "lizard");
+console.log(rpsls("lizard", "lizard"));
 
-//prendo l'elemento della dom da aggiornare
-const domElement = document.getElementById("rpsls");
-
-//aggiorno l'elemento della dom
-domElement.textContent = resultRpsls;
   
